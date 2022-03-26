@@ -68,3 +68,23 @@ date: <DATETIME>
 1. Enable [Giscus app](https://github.com/apps/giscus)
 2. Enable Giscus in repository: [Enabling or disabling github discussions for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository)
 3. Setup Giscus in _config.yml
+
+    1. Go to [giscus.app](https://giscus.app/) and create the configuration for your repository
+
+    2. Copy the corresponding values from the generated `<script src=...>` to _config.yml
+
+        ```diff
+        +++ b/_config.yml
+        -  active:         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+        +  active: giscus # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+
+        giscus:
+        -    repo:             # <gh-username>/<repo>
+        -    repo_id:
+        -    category:
+        -    category_id:
+        +    repo: <gh-username>/<gh-username>.github.io # <gh-username>/<repo>
+        +    repo_id: <repo-is>
+        +    category: <category>
+        +    category_id: <category-id>
+        ```
