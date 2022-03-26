@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setup Jekyll Blog with Chirpy theme on Github Pages
+title: Setup Jekyll Blog with Chirpy theme on GitHub Pages
 date: 2022-03-26 13:48 +0100
 category: HowTo
 tags:
@@ -8,16 +8,16 @@ tags:
     - HowTo
 ---
 > Steps to reproduce this blog, for me to remember and for your enjoyment. It is hosted on free public GitHub repository. You need no server and it is completely free.
-The domain of the blog will be `<github_username>.github.io`
+The domain of the blog will be `<gh-username>.github.io`
 {: .prompt-tip }
 
 # Create repository and configure blog
 ## Setup repository
-1. Repository name will be `<github_username>.github.io`
+1. Repository name will be `<gh-username>.github.io`
 2. Use https://github.com/cotes2020/chirpy-starter/generate create repository
 3. Checkout repo with 
 ```
-git clone git@github.com:<github_username>/<github_username>.github.io.git
+git clone git@github.com:<gh-username>/<gh-username>.github.io.git
 ```
 
 ## Configure blog in `_config.yml`
@@ -34,9 +34,9 @@ baseurl: ''
 Since we are using GitHub Pages I thought I need to fill this out. This is not the case.
 
 ## Configure GitHub repository to build and publish the blog
-Now, when you push the changes to the repository, the blog should be build with github actions.
+Now, when you push the changes to the repository, the blog should be build with GitHub actions.
 
-The build output will be push/ed to a branch called `gh-pages`.
+The build output will be pushed to a branch called `gh-pages`.
 
 Now on your GitHub repository, you have to go to
 `Settings -> Pages` and select
@@ -66,7 +66,7 @@ date: <DATETIME>
 
 # Enable Giscus comments
 1. Enable [Giscus app](https://github.com/apps/giscus)
-2. Enable Giscus in repository: [Enabling or disabling github discussions for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository)
+2. Enable Giscus in repository: [Enabling or disabling GitHub discussions for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository)
 3. Setup Giscus in _config.yml
 
     1. Go to [giscus.app](https://giscus.app/) and create the configuration for your repository
@@ -84,7 +84,7 @@ date: <DATETIME>
         -    category:
         -    category_id:
         +    repo: <gh-username>/<gh-username>.github.io # <gh-username>/<repo>
-        +    repo_id: <repo-is>
+        +    repo_id: <repo-id>
         +    category: <category>
         +    category_id: <category-id>
         ```
