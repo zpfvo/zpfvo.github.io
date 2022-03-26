@@ -43,3 +43,27 @@ Now on your GitHub repository, you have to go to
 - Branch `gh-pages`
 - Folder `/`
 
+# Create first post with jekyll-compose
+> To make it easier to create new posts, wie can use the gem `jekyll-compose`
+{: .prompt-tip }
+
+1. Install `jekyll-compose`
+
+    Run `bundle add jekyll-compose`
+
+2. Create new post
+
+    Run `bundle exec jekyll post "<TITLE>.md"`
+
+This will create a file in `_posts/YYYY-MM-DD-<TITEL>.md` with the corresponding front matter:
+```yaml
+---
+layout: post
+title: <TITEL>
+date: <DATETIME>
+```
+
+# Enable Giscus comments
+1. Enable [Giscus app](https://github.com/apps/giscus)
+2. Enable Giscus in repository: [Enabling or disabling github discussions for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository)
+3. Setup Giscus in _config.yml
