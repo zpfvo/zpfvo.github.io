@@ -61,6 +61,7 @@ This will create a file in `_posts/YYYY-MM-DD-<TITEL>.md` with the corresponding
 layout: post
 title: <TITEL>
 date: <DATETIME>
+---
 ```
 
 # Enable Giscus comments
