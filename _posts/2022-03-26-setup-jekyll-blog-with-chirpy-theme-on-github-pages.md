@@ -2,6 +2,10 @@
 layout: post
 title: Setup Jekyll Blog with Chirpy theme on Github Pages
 date: 2022-03-26 13:48 +0100
+category: HowTo
+tags:
+    - Jekyll
+    - HowTo
 ---
 > Steps to reproduce this blog, for me to remember and for your enjoyment. It is hosted on free public GitHub repository. You need no server and it is completely free.
 The domain of the blog will be `<github_username>.github.io`
@@ -32,9 +36,10 @@ Since we are using GitHub Pages I thought I need to fill this out. This is not t
 ## Configure GitHub repository to build and publish the blog
 Now, when you push the changes to the repository, the blog should be build with github actions.
 
-The build output will be pushed to a branch called `gh-pages`.
+The build output will be push/ed to a branch called `gh-pages`.
 
 Now on your GitHub repository, you have to go to
 `Settings -> Pages` and select
 - Branch `gh-pages`
 - Folder `/`
+
