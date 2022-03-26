@@ -19,6 +19,7 @@ The domain of the blog will be `<gh-username>.github.io`
 ```
 git clone git@github.com:<gh-username>/<gh-username>.github.io.git
 ```
+4. Run `bundle install` in the folder to install the environment.
 
 ## Configure blog in `_config.yml`
 The config template is pretty well annotated with comments and easy to fill out, but there is one pitfall
