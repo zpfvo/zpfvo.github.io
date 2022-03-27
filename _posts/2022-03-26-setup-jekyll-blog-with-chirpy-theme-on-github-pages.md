@@ -14,7 +14,7 @@ The domain of the blog will be `<gh-username>.github.io`
 # Create repository and configure blog
 ## Setup repository
 1. Repository name will be `<gh-username>.github.io`
-2. Use https://github.com/cotes2020/chirpy-starter/generate create repository
+2. Use [github.com/cotes2020/chirpy-starter/generate](https://github.com/cotes2020/chirpy-starter/generate) create repository
 3. Checkout repo with 
 ```
 git clone git@github.com:<gh-username>/<gh-username>.github.io.git
