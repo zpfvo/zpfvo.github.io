@@ -117,6 +117,9 @@ assets:
 
 paginate: 10
 
+plugins:
+  - jemoji
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
