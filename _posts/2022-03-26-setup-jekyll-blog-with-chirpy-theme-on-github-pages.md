@@ -54,7 +54,7 @@ Now on your GitHub repository, you have to go to
 
 2. Create new post
 
-    Run `bundle exec jekyll post "<TITLE>.md"`
+    Run `bundle exec jekyll post "<TITLE>"`
 
 This will create a file in `_posts/YYYY-MM-DD-<TITEL>.md` with the corresponding front matter:
 ```yaml
