@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://zpfvo.github.io/posts/setup-jekyll-blog-with-chirpy-theme-on-github-pages/</loc>
+<lastmod>2022-03-28T07:14:37+00:00</lastmod>
+</url>
+<url>
+<loc>https://zpfvo.github.io/categories/</loc>
+<lastmod>2022-03-28T07:14:53+00:00</lastmod>
+</url>
+<url>
+<loc>https://zpfvo.github.io/tags/</loc>
+<lastmod>2022-03-28T07:14:53+00:00</lastmod>
+</url>
+<url>
+<loc>https://zpfvo.github.io/archives/</loc>
+<lastmod>2022-03-28T07:14:53+00:00</lastmod>
+</url>
+<url>
+<loc>https://zpfvo.github.io/about/</loc>
+<lastmod>2022-03-28T07:14:53+00:00</lastmod>
+</url>
+<url>
+<loc>https://zpfvo.github.io/</loc>
+</url>
+<url>
+<loc>https://zpfvo.github.io/tags/jekyll/</loc>
+</url>
+<url>
+<loc>https://zpfvo.github.io/tags/howto/</loc>
+</url>
+<url>
+<loc>https://zpfvo.github.io/categories/howto/</loc>
+</url>
+</urlset>
