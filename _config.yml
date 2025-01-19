@@ -42,7 +42,8 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
-
+plugins:
+  - jemoji
 # Site Verification Settings
 webmaster_verifications:
   google: # fill in your Google verification code
