@@ -38,17 +38,15 @@ in practice these cases are far more likely to cause a loss.
 ### Solution
 The solution I went for is a 3-of-5 SLIP39 backup. Each share stored geographically apart with people I trust.
 I won't use a passphrase because a thief cannot extract any information about the key from
-a single share. The people that I trust with the shares are chosen that they do know the others,
+a single share. The people that I trust with the shares are chosen that they don't know the others,
 but that they would probably find together for example in the case of my sudden death.
 
 The obvious downside to this are the costs. Some commercial steel plate solutions for hardware wallets come with some hefty price tags. With the 3-of-5 setup you even have to multiply that price *five times*. So to make the whole thing affordable I decided to put the shares on steel washer wallets.
 
-
-
 ## Creating the physical backup
 ### Finding the right washers
 It might seem strange to start with the washers, but we will be 3D-printing the stamping jig to be exactly matching the
-washers. The default sizes from the excellent article [Make your cold wallet with washers](https://blockmit.com/english/guides/diy/make-cold-wallet-washers/) are M8 D25mm (thickness 2 mm) washers. I had a hard time to find those and in the end had to order online instead of just going to the hardware store. But these dimensions work well and the washers you look for should be in that ballpark.
+washers. The default sizes from the excellent article [Make your cold wallet with washers](https://blockmit.com/english/guides/diy/make-cold-wallet-washers/) are M8 D25mm (thickness 2 mm) washers. I had a hard time to find those, and in the end had to order online instead of just going to the hardware store. But these dimensions work well and the washers you look for should be in that ballpark.
 
 > You really want to go for stainless steel washers. There are different qualities: A2, A4, 304 and 316. I went for the A4 ones, but you can read up on the different properties the steel has.
 Some of them are more resistant, for example, to salt water.
@@ -57,7 +55,7 @@ Some of them are more resistant, for example, to salt water.
 The *thickness* decides if you can stamp the washers from one or two sides. The 2 mm ones that I got allowed it to easily stamp from both sides. I wouldn't do that on any washers that are thinner so. Stamping from both sides reduces the absolute number of moving parts with your backup. The downside is that you have to be a little more careful to get the numbering right when stamping.
 
 ### Buying the stamping letters
-If you stayed near the default washer dimensions (M8 D25mm) you can go by the standard stamping letters. The size of letters is often described as 3-4 mm but the important part are the dimensions of the pens which should be like 6x6mm. If you have different dimensions, you also need to customize the 3d print of the stamping jig (which we do later).
+If you stayed near the default washer dimensions (M8 D25mm) you can go by the standard stamping letters. The size of letters is often described as 3-4 mm but the important part are the dimensions of the pens which should be like 6x6mm. If you have different dimensions, you also need to customize the 3d print of the stamping jig (next section).
 
 > I went with the [cheapest stamping letter kit](https://a.co/d/hcblRlv) for around €14 but I really wished I would have spent the €10 more to get a [kit with the nice labeled wood box](https://a.co/d/c6WrMEw). You are going to stamp a lot of words, and it is really hard to find the correct stamps because the letters are so tiny.
 {: .prompt-tip }
