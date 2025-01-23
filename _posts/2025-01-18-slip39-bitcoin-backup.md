@@ -9,12 +9,13 @@ tags:
     - diy
 ---
 
-I decided to move my Bitcoin off the exchange and into a cold wallet to secure my
-assets. This article will describe first why I decided on creating a 3-of-5 SLIP39
+As a Bitcoin holder, securing my assets was a priority. Moving them off an exchange into a cold wallet gave me full control—but it also raised a critical question: how could I create a backup solution that was secure, durable, and accessible to my family if needed?.
+
+This article will describe first why I decided on creating a 3-of-5 SLIP39
 steel washer wallet and then a step-to-step description of how to do this best.
 
 ## Why SLIP39
-I wanted strong security, but I also needed redundancy. After all, I wanted my funds
+Balancing strong security with practical redundancy was my top priority. After all, I wanted my funds
 to be accessible to my family or trusted people if something were to happen to me.
 I didn’t want a backup plan that was too complicated or that could leave them locked out of the funds.
 So, I needed a solution that would balance security with accessibility, and after
@@ -26,9 +27,10 @@ a single hardware wallet. Even if one of your signing devices is compromised you
 
 The downside to this is, that (at least at the moment) the setup is way more complex, and you also have to back up all the xpubs of the signers.
 
+Ultimately, I chose SLIP39 for its balance of simplicity, security, and accessibility, especially given my desire to ensure trusted individuals could access the funds if needed.
+
 ### What I wanted to be protected against by my backup solution
-While of course a compromised hardware wallet could theoretically make you lose your funds, for me
-in practice these cases are far more likely to cause a loss.
+While of course a compromised hardware wallet is theoretically a possibility how you might lose your funds, in practice the following cases are far more likely to cause a loss.
 
 - Setting up the backup incorrectly
 - Someone steals your seed backup (without passphrase)
@@ -48,20 +50,19 @@ The obvious downside to this are the costs. Some commercial steel plate solution
 It might seem strange to start with the washers, but we will be 3D-printing the stamping jig to be exactly matching the
 washers. The default sizes from the excellent article [Make your cold wallet with washers](https://blockmit.com/english/guides/diy/make-cold-wallet-washers/) are M8 D25mm (thickness 2 mm) washers. I had a hard time to find those, and in the end had to order online instead of just going to the hardware store. But these dimensions work well and the washers you look for should be in that ballpark.
 
-> You really want to go for stainless steel washers. There are different qualities: A2, A4, 304 and 316. I went for the A4 ones, but you can read up on the different properties the steel has.
-Some of them are more resistant, for example, to salt water.
+> You really want to go for **stainless steel washers**. There are different qualities: A2 (also named 304) and A4 (also named 316). The A4 one is even more resistant to acids and salt water. That way they are sometimes also named "marine" steel.
 {: .prompt-warning }
 
-The *thickness* decides if you can stamp the washers from one or two sides. The 2 mm ones that I got allowed it to easily stamp from both sides. I wouldn't do that on any washers that are thinner so. Stamping from both sides reduces the absolute number of moving parts with your backup. The downside is that you have to be a little more careful to get the numbering right when stamping.
+The *thickness* decides if you can stamp the washers from one or two sides. The 2 mm ones that I got allowed it to easily stamp from both sides. I wouldn't do that on any washers that are thinner though. Stamping from both sides reduces the absolute number of moving parts with your backup. The downside is that you have to be a little more careful to get the numbering right when stamping.
 
 ### Buying the stamping letters
 If you stayed near the default washer dimensions (M8 D25mm) you can go by the standard stamping letters. The size of letters is often described as 3-4 mm but the important part are the dimensions of the pens which should be like 6x6mm. If you have different dimensions, you also need to customize the 3d print of the stamping jig (next section).
 
-> I went with the [cheapest stamping letter kit](https://a.co/d/hcblRlv) for around €14 but I really wished I would have spent the €10 more to get a [kit with the nice labeled wood box](https://a.co/d/c6WrMEw). You are going to stamp a lot of words, and it is really hard to find the correct stamps because the letters are so tiny.
+> I went with the [cheapest stamping letter kit](https://a.co/d/hcblRlv) for around €14, but I really wished I would have spent the €10 more to get a [kit with the nice labeled wood box](https://a.co/d/c6WrMEw). You are going to stamp a lot of words, and it is really hard to find the correct stamps because the letters are so tiny. For ease of use, especially if you’re new to stamping, consider investing in a better-quality kit with clear labeling. It will save you time and frustration during the stamping process.
 {: .prompt-tip }
 
 ## Customizing the 3D printed stamping jig
-
+Next step is 
 
 ## Creating the word lists
 SLIP39 was created by *SatoshiLabs*. So their newer Trezor Models (starting with Trezor Safe 3) have the SLIP39 single share backup scheme selected as the default. You can choose "Multi-Share Backup" right below.
