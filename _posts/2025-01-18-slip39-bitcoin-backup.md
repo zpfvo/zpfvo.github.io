@@ -34,9 +34,9 @@ While a compromised hardware wallet is a theoretical risk, I wanted to protect a
 - Destruction of the seed backup
 
 ### My Solution
-I decided on a 3-of-5 SLIP39 backup, with each share stored in geographically separate locations and entrusted to people I trust. I opted not to use a passphrase because a thief cannot extract any useful information from a single share.
+I decided on a 3-of-5 SLIP39 backup, with each share stored in geographically separate locations and entrusted to people I trust. I opted not to use a passphrase because a thief cannot extract any useful information from a single share. The people I entrusted with the shares do not know each other, but they would likely connect in the event of my sudden death to reconstruct the wallet, and they will be able to do so without a passphrase.
 
-The people I entrusted with the shares do not know each other, but they would likely connect in the event of my sudden death to reconstruct the wallet.
+Using SLIP39 has also the benefit of being implemented into the UX of the Trezor wallets (and also Keystone wallets, and some other software wallets) which helps setting up the backup, thus preventing mistakes that might make it impossible to restore your wallet.
 
 The main downside to this approach is the cost. Some commercial steel plate solutions for hardware wallets come with hefty price tags, and with a 3-of-5 setup, you need five plates. To make it more affordable, I decided to store the shares on steel washer wallets.
 
@@ -44,15 +44,14 @@ The main downside to this approach is the cost. Some commercial steel plate solu
 ### Finding the Right Washers
 It might seem strange to start with the washers, but we’ll be 3D-printing a stamping jig to match the washers’ size exactly.
 
-The default sizes recommended in the excellent article [Make Your Cold Wallet with Washers](https://blockmit.com/english/guides/diy/make-cold-wallet-washers/) are M8 D25mm (thickness 2mm) washers. I had trouble finding these locally and ended up ordering them online. These dimensions work well, so aim for washers in this ballpark.
-
+The default sizes recommended in the excellent article [Make Your Cold Wallet with Washers](https://blockmit.com/english/guides/diy/make-cold-wallet-washers/) are M8 D24 mm (thickness 2mm) washers. I had trouble finding these locally and ended up ordering them online. These dimensions work well, so aim for washers in this ballpark.
 > **Tip:** Always choose **stainless steel washers.** They come in two main grades: A2 (also called 304) and A4 (also called 316). A4 is more resistant to acids and saltwater, which is why it’s sometimes referred to as "marine steel."
 {: .prompt-warning }
 
-The *thickness* of the washers determines whether you can stamp both sides. The 2mm washers I used worked well for stamping on both sides. I wouldn’t recommend doing this with thinner washers, though. Stamping on both sides reduces the total number of washers needed, but you’ll need to carefully track the numbering when stamping.
+The *thickness* of the washers determines whether you can stamp both sides. The 2mm washers I used worked well for stamping on both sides. I wouldn’t recommend doing this with thinner washers, because I could already see some tiny bumps on the backside site of a stamped word, when I used a lot of force (two sided stamping was still no problem, though). Stamping on both sides reduces the total number of washers needed, but you’ll need to carefully track the numbering when stamping.
 
 ### Buying the Stamping Letters
-If you stick to the default washer dimensions (M8 D25mm), standard stamping letters will work fine. These are usually described as 3-4mm in size, but the critical measurement is the pen dimensions, which should be about 6x6mm. If you use washers of different dimensions, you’ll need to customize the 3D print for the stamping jig in the next step.
+If you stick to the default washer dimensions (M8 D24mm), standard stamping letters will work fine. These are usually described as 3-4mm in size, but the critical measurement is the pen dimensions, which should be about 6x6mm. If your washers or the stamping pens have different dimensions, you’ll need to customize the 3D print for the stamping jig in the next step.
 
 > **Personal Experience:** I bought the [cheapest stamping letter kit](https://a.co/d/hcblRlv) for around €14, but I wish I’d spent an extra €10 for a [kit with a labeled wooden box](https://a.co/d/c6WrMEw). You’ll be stamping a lot of letters, and the tiny size makes it hard to find the right stamp quickly. For ease of use, especially if you’re new to stamping, I recommend investing in a better-quality kit with clear labeling to save time and frustration.
 {: .prompt-tip }
